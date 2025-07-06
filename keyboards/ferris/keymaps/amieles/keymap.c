@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [0] = LAYOUT_split_3x5_2(
       KC_Q,        KC_W,         KC_E,         KC_R,   KC_T,         KC_Y,         KC_U,         KC_I,         KC_O,    KC_P, 
    //----------------------------------------------------------------         --------------------------------------------------------
-      TD(TD_A_ESC), LGUI_T(KC_S), LALT_T(KC_D), LCTL_T(KC_F),   KC_G,         KC_H, RCTL_T(KC_J), RALT_T(KC_K), RGUI_T(KC_L), KC_SCLN, 
+      TD(TD_A_ESC), MT(MOD_LGUI,KC_S), MT(MOD_LALT,KC_D), MT(MOD_LCTL,KC_F),   KC_G,         KC_H, MT(MOD_RCTL,KC_J), MT(MOD_RALT,KC_K), MT(MOD_RGUI,KC_L), KC_SCLN, 
    //----------------------------------------------------------------         --------------------------------------------------------
       TD(TD_Z_TAB),         KC_X,         KC_C,         KC_V,   KC_B,         KC_N,         KC_M,      KC_COMM,       KC_DOT,  KC_ENT, 
    //----------------------------------------------------------------         --------------------------------------------------------
@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    [1] = LAYOUT_split_3x5_2(
               KC_1,       KC_2,         KC_3,         KC_4,   KC_5,         KC_6,         KC_7,         KC_8,         KC_9,    TD(TD_0_CTRL_ALT_DEL), 
    //----------------------------------------------------------------         --------------------------------------------------------
-      KC_ESC,    KC_TILD,      KC_PLUS,       KC_EQL, KC_GRV,         KC_BSLS,   KC_LCBR,      KC_RCBR,      KC_PIPE, KC_QUOT, 
+      KC_ESC,    KC_UNDS,      KC_MINS,       KC_EQL, KC_GRV,         KC_BSLS,   KC_LCBR,      KC_RCBR,      KC_PIPE, KC_QUOT, 
    //--------------------------------------------------------         --------------------------------------------------------
-      TO(2),    KC_UNDS,      KC_MINS,        KC_LT,  KC_GT,         KC_LBRC,   KC_LPRN,      KC_RPRN,      KC_RBRC, KC_SLSH, 
+      TO(2),    KC_TILD,      KC_PLUS,        KC_LT,  KC_GT,         KC_LBRC,   KC_LPRN,      KC_RPRN,      KC_RBRC, KC_SLSH, 
    //--------------------------------------------------------         --------------------------------------------------------
                                                KC_LSFT,KC_SPC,         KC_BSPC, XXXXXXX
 ),
