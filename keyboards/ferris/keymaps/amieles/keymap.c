@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_LSFT,KC_SPC,         KC_BSPC, XXXXXXX
 ),
    [2] = LAYOUT_split_3x5_2(
-     KC_TRNS,    KC_TRNS,        MS_UP,      KC_TRNS,KC_TRNS,         LSFT(LCTL(KC_LEFT)),   LSFT(LCTL(KC_RGHT)),      LGUI(KC_LEFT),      LGUI(KC_RGHT), KC_TRNS,
+     KC_TRNS,    KC_TRNS,        MS_UP,      KC_TRNS,KC_TRNS,         LALT(LCTL(KC_LEFT)),   LALT(LCTL(KC_RGHT)),      LGUI(KC_LEFT),      LGUI(KC_RGHT), KC_TRNS,
    //--------------------------------------------------------         --------------------------------------------------------
      KC_TRNS,    MS_LEFT,      MS_DOWN,      MS_RGHT,KC_TRNS,         KC_LEFT,   KC_DOWN,        KC_UP,      KC_RGHT,  KC_ENT,
    //--------------------------------------------------------         --------------------------------------------------------
