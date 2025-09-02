@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    //----------------------------------------------------------------         --------------------------------------------------------
       TD(TD_Z_TAB),         KC_X,         KC_C,         KC_V,   KC_B,         KC_N,         KC_M,      KC_COMM,       KC_DOT,  KC_SCLN,
    //----------------------------------------------------------------         --------------------------------------------------------
-                                                     KC_LSFT, KC_SPC,         KC_BSPC, MO(1)
+                                                     KC_LSFT, LT(2, KC_SPC),         KC_BSPC, MO(1)
 ),
    [1] = LAYOUT_split_3x5_2(
               KC_1,       KC_2,         KC_3,         KC_4,   KC_5,         KC_6,         KC_7,         KC_8,         KC_9,    TD(TD_0_CTRL_ALT_DEL),
@@ -60,11 +60,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_LSFT,KC_SPC,         KC_BSPC, XXXXXXX
 ),
    [2] = LAYOUT_split_3x5_2(
-     KC_TRNS,    KC_TRNS,        MS_UP,      KC_TRNS,KC_TRNS,         LALT(LCTL(KC_LEFT)),   LALT(LCTL(KC_RGHT)),      LGUI(KC_LEFT),      LGUI(KC_RGHT), KC_TRNS,
+     XXXXXXX,    XXXXXXX,        MS_UP,      XXXXXXX,XXXXXXX,         LALT(LCTL(KC_LEFT)),   LALT(LCTL(KC_RGHT)),      LGUI(KC_LEFT),      LGUI(KC_RGHT), XXXXXXX,
    //--------------------------------------------------------         --------------------------------------------------------
-     KC_TRNS,    MS_LEFT,      MS_DOWN,      MS_RGHT,KC_TRNS,         KC_LEFT,   KC_DOWN,        KC_UP,      KC_RGHT,  KC_ENT,
+     XXXXXXX,    MS_LEFT,      MS_DOWN,      MS_RGHT,XXXXXXX,         KC_LEFT,   KC_DOWN,        KC_UP,      KC_RGHT,  KC_ENT,
    //--------------------------------------------------------         --------------------------------------------------------
-     KC_TRNS,    MS_BTN2,      MS_WHLU,      MS_WHLD,KC_TRNS,         MS_BTN1,   MS_ACL0,      MS_ACL1,      MS_ACL2, KC_TRNS,
+     XXXXXXX,    MS_BTN2,      MS_WHLU,      MS_WHLD,XXXXXXX,         MS_BTN1,   MS_ACL0,      MS_ACL1,      MS_ACL2, XXXXXXX,
    //--------------------------------------------------------         --------------------------------------------------------
                                                TO(0),KC_LSFT,         KC_BSPC, TO(2)
 )
