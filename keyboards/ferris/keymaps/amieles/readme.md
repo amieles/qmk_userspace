@@ -1,1 +1,1 @@
-clearing this up for a simple keymap diagram
+qmk compile -kb ferris/sweep -km amieles -e CONVERT_TO=promicro_rp2040
